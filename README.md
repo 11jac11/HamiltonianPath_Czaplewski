@@ -4,6 +4,9 @@ In this repository is the contents of Jason Czaplewski's Project 1 Hamiltonian P
 NOTE:
 For some reason you cannot acces the pdf unless you click the download raw file button so I attached screenshots of the files that are not submitted to gradescope (SS) in order to make sure that you can see them.
 
+NOTE:
+For the output files since the inputs were randomly genreated I cannot specificially give the inputs whitout rewriting the output code. Also note that the test files are just pieces of code taken from the main code since there are tests built in to make sure it works. The inputs and outputs vary from run to run but I still included what I thought would suffice ot meet that requirment.
+
 Code Development:
 When starting the code I broke it down into a few core components; random graph generation, Hamiltonian cycle detection, performance measurement, and data visualization. I initially worked on generating random graphs using the NetworkX library and implementing the brute-force algorithm to check for Hamiltonian cycles by examining all vertex permutations. After making sure they were correct with small manually constructed graphs, I then started timing the execution using the high precision timer (time.perf_counter()). This allowed me to accurately measure the execution times as the vertex sizes increased. To ensure the results were accurate, multiple trials were run for each graph size. I then averaged the results to get rid of the variability introduced by random graph generation. Once the core functionality was in place I used Matplotlib to plot individual and average execution times. Finally, I ran multiple trials across different graph sizes in order to be able to run the code in an effective manner but still see the exponential growth in the graph. 
 
